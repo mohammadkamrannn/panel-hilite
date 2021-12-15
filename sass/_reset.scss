@@ -1,0 +1,24 @@
+@font-face {
+    font-family: iranYekan;
+    src: url(../assets/fonts/iranyekanwebbold.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol, ul{
+    list-style-type: none;
+}
+
+body{
+    direction: rtl;
+    font-family: 'iranYekan';
+    font-weight: 400;
+}
