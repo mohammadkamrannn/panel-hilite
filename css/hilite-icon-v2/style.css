@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'hilite-icon';
+  src:  url('fonts/hilite-icon.eot?56x02z');
+  src:  url('fonts/hilite-icon.eot?56x02z#iefix') format('embedded-opentype'),
+    url('fonts/hilite-icon.ttf?56x02z') format('truetype'),
+    url('fonts/hilite-icon.woff?56x02z') format('woff'),
+    url('fonts/hilite-icon.svg?56x02z#hilite-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hilite-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ads:before {
+  content: "\e900";
+}
+.icon-analytics:before {
+  content: "\e901";
+}
+.icon-analytics-2:before {
+  content: "\e902";
+}
+.icon-campaign:before {
+  content: "\e903";
+}
+.icon-log-out:before {
+  content: "\e904";
+}
+.icon-money:before {
+  content: "\e905";
+}
+.icon-panel:before {
+  content: "\e906";
+}
+.icon-ticket:before {
+  content: "\e907";
+}
+.icon-user:before {
+  content: "\e908";
+}
+.icon-user-2:before {
+  content: "\e909";
+}
+.icon-viewer:before {
+  content: "\e90a";
+}
