@@ -36,6 +36,37 @@
     h2{
         margin-bottom: 1rem;
     }
+    @media only screen and (max-width: 567px) {
+        width: 100%;
+    }
+}
+
+.new-icons{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap:wrap;
+    text-align: center;
+    span{
+        margin: 1rem 2rem;
+        font-size: 3rem;
+        color: #4CC300;
+        cursor: pointer;
+        &:hover{
+            color: #666666;
+        }
+    }
+    h3{
+        font-size: 1rem;
+    }
+    div{
+        @media only screen and (max-width: 567px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    @media only screen and (max-width: 567px) {
+        display: block;
+    }
 }
 
 .green-line,.green-line-light{
@@ -100,4 +131,6 @@ ul li{
         border: none;
     }
 }
+
+
 

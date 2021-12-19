@@ -25,36 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-ads-banner:before {
-  content: "\e90b";
-}
-.icon-ads-native:before {
-  content: "\e90c";
-}
-.icon-analytics-3:before {
-  content: "\e90d";
-}
-.icon-list-dollar:before {
-  content: "\e90e";
-}
-.icon-list-number:before {
-  content: "\e90f";
-}
-.icon-log-out-2:before {
-  content: "\e910";
-}
-.icon-moneys-2:before {
-  content: "\e911";
-}
-.icon-notification:before {
-  content: "\e912";
-}
-.icon-ticket-plus:before {
-  content: "\e913";
-}
-.icon-tickets-3:before {
-  content: "\e914";
-}
 .icon-ads:before {
   content: "\e900";
 }
