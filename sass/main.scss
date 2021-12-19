@@ -2,6 +2,10 @@
 
 .container{
     width: 100%;
+    display: flex;
+    @media only screen and (max-width: 567px) {
+        display: block;
+    }
 }
 
 .row-right{
@@ -9,6 +13,29 @@
     background-color: #E6E6E6;
     min-height: 100vh;
     padding: 1rem;
+    @media only screen and (max-width: 1200px) {
+        width: 25%;
+    }
+    @media only screen and (max-width: 992px) {
+        width: 30%;
+    }
+    @media only screen and (max-width: 756) {
+        width: 40%;
+    }
+    @media only screen and (max-width: 567px) {
+        width: 100%;
+        min-height: auto;
+    }
+}
+
+.row-left{
+    padding: 1rem;
+    p > a{
+        color: #4CC300;
+    }
+    h2{
+        margin-bottom: 1rem;
+    }
 }
 
 .green-line,.green-line-light{
@@ -73,3 +100,4 @@ ul li{
         border: none;
     }
 }
+

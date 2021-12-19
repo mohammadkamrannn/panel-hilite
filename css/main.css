@@ -27,6 +27,15 @@ body {
 
 .container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 567px) {
+  .container {
+    display: block;
+  }
 }
 
 .row-right {
@@ -34,6 +43,43 @@ body {
   background-color: #E6E6E6;
   min-height: 100vh;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .row-right {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .row-right {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 756) {
+  .row-right {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .row-right {
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+.row-left {
+  padding: 1rem;
+}
+
+.row-left p > a {
+  color: #4CC300;
+}
+
+.row-left h2 {
+  margin-bottom: 1rem;
 }
 
 .green-line, .green-line-light {
