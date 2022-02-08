@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/hilite-icon-v2/style.css">
+    <link rel="stylesheet" href="./css/hilite/style.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>پنل کاربری هایلایت</title>
 </head>
@@ -14,75 +14,316 @@
             <h3>پنل مدیریت</h3>
             <span class="green-line"></span>
             <div class="user-name">
-                <span class="icon-user-2 icon-img"></span><span>محمد کامران</span>
+                <span class="hl-user icon-img"></span><span>محمد کامران</span>
             </div>
             <span class="green-line"></span>
 
             <div class="panel-menu">
                 <ul>
-                    <li><a class="active" href="#"><span class="icon-hilite icon-panel"></span> میز کار</a></li>
-                    <li><a href="#"><span class="icon-hilite icon-analytics"></span> گزارش کمپین ها</a></li>
-                    <li><a href="#"><span class="icon-hilite icon-campaign"></span> کمپین ها</a></li>
-                    <li><a href="#"><span class="icon-hilite icon-ads"></span> تبلیغات</a></li>
-                    <li><a href="#"><span class="icon-hilite icon-viewer"></span> سایت های نمایش دهنده</a></li>
-                    <li><a href="#"><span class="icon-hilite icon-money"></span> مالی</a></li>
-                    <li><a href="#"><span class="icon-hilite icon-ticket"></span> تیکت ها</a></li>
-                    <li><a href="#"><span class="icon-hilite icon-user"></span> اطلاعات کاربری</a></li>
-                    <li><a href="#"><span class="icon-hilite icon-log-out"></span> خروج</a></li>
+                    <li><a class="active" href="#"><i class="icon-hilite hl-panel"></i> میز کار</a></li>
+                    <li><a href="#"><i class="icon-hilite hl-chart"></i> گزارش کمپین ها</a></li>
+                    <li><a href="#"><i class="icon-hilite hl-notification"></i> کمپین ها</a></li>
+                    <li><a href="#"><i class="icon-hilite hl-advertise"></i> تبلیغات</a></li>
+                    <li><a href="#"><i class="icon-hilite hl-view-circle"></i> سایت های نمایش دهنده</a></li>
+                    <li><a href="#"><i class="icon-hilite hl-money"></i> مالی</a></li>
+                    <li><a href="#"><i class="icon-hilite hl-ticket"></i> تیکت ها</a></li>
+                    <li><a href="#"><i class="icon-hilite hl-user"></i> اطلاعات کاربری</a></li>
+                    <li><a href="#"><i class="icon-hilite hl-logout-a"></i> خروج</a></li>
                 </ul>
             </div>
         </div>
         <div class="row-left">
-            <h2>فونت ایکن اختصاصی هایلایت ورژن 2</h2>
-            <p>برای مشاهده ورژن 1 فونت ایکن هایلایت <a href="./hilite-icon-v1.html">اینجا</a> را کلیک کنید.</p>
-            <div class="new-icons">
-                <div>
-                    <span class="icon-hilite icon-ads-banner"></span>
-                 <h3>تبلیغات بنری</h3>
+            <h2>فونت ایکن اختصاصی هایلایت</h2>
+            <div class="container-icon">
+                <div class="icon-view" onclick="copyToClipboard('#hl-add-banner')">
+                    <i class="hl-add-banner"></i>
+                    <span>تبلیغات بنری</span>
+                    <span id="hl-add-banner">hl-add-banner</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-ads-native"></span>
-                <h3>تبلیغات همسان</h3>
+                <div class="icon-view" onclick="copyToClipboard('#hl-ad-native')">
+                    <i class="hl-ad-native"></i>
+                    <span>تبلیغات همسان</span>
+                    <span id="hl-ad-native">hl-ad-native</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-analytics-3"></span>
-                <h3>گزارشات</h3>
+                <div class="icon-view" onclick="copyToClipboard('#hl-ad-push')">
+                    <i class="hl-ad-push"></i>
+                    <span>تبلیغات پوش</span>
+                    <span id="hl-ad-push">hl-ad-push</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-analytics-2"></span>
-                <h3>گزارشات-2</h3>
+                <div class="icon-view" onclick="copyToClipboard('#hl-advertise')">
+                    <i class="hl-advertise"></i>
+                    <span>تبلیغات</span>
+                    <span id="hl-advertise">hl-advertise</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-list-dollar"></span>
-                <h3>لیست بیانه</h3>
+                <div class="icon-view" onclick="copyToClipboard('#hl-banner')">
+                    <i class="hl-banner"></i>
+                    <span>بنری</span>
+                    <span id="hl-banner">hl-banner</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-list-number"></span>
-                <h3>پیش فاکتور</h3>
+                <div class="icon-view" onclick="copyToClipboard('#hl-cart')">
+                    <i class="hl-cart"></i>
+                    <span>پرداخت ها</span>
+                    <span id="hl-cart">hl-cart</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-log-out-2"></span>
-                <h3>خروج-2</h3>
+                <div class="icon-view" onclick="copyToClipboard('#hl-cart-arrows')">
+                    <i class="hl-cart-arrows"></i>
+                    <span>تغیرات موجودی حساب ها</span>
+                    <span id="hl-cart-arrows">hl-cart-arrows</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-moneys-2"></span>
-                <h3>افزایش اعتبار</h3>
+                <div class="icon-view" onclick="copyToClipboard('#hl-chart')">
+                    <i class="hl-chart"></i>
+                    <span>گزارش کمپین ها</span>
+                    <span id="hl-chart">hl-chart</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-notification"></span>
-                <h3>تبلیغات پوش</h3>
+                <div class="icon-view" onclick="copyToClipboard('#hl-chart-b')">
+                    <i class="hl-chart-b"></i>
+                    <span>گزارش بیعانه ها</span>
+                    <span id="hl-chart-b">hl-chart-b</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-ticket-plus"></span>
-                <h3>تیکت جدید</h3>
+                <div class="icon-view" onclick="copyToClipboard('#hl-chart-circle')">
+                    <i class="hl-chart-circle"></i>
+                    <span>گزارش(گرد)</span>
+                    <span id="hl-chart-circle">hl-chart-circle</span>
                 </div>
-                <div>
-                    <span class="icon-hilite icon-tickets-3"></span>
-                <h3>تیکت های شما</h3>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-chart-money')">
+                    <i class="hl-chart-money"></i>
+                    <span>گزارش مالی</span>
+                    <span id="hl-chart-money">hl-chart-money</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-chart-solid')">
+                    <i class="hl-chart-solid"></i>
+                    <span>گزارش(تو پر)</span>
+                    <span id="hl-chart-solid">hl-chart-solid</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-danger')">
+                    <i class="hl-danger"></i>
+                    <span>خطا</span>
+                    <span id="hl-danger">hl-danger</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-discount')">
+                    <i class="hl-discount"></i>
+                    <span>کد های تخفیف</span>
+                    <span id="hl-discount">hl-discount</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-discount-circle')">
+                    <i class="hl-discount-circle"></i>
+                    <span>تخفیف</span>
+                    <span id="hl-discount-circle">hl-discount-circle</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-dollar')">
+                    <i class="hl-dollar"></i>
+                    <span>دلار</span>
+                    <span id="hl-dollar">hl-dollar</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-list-dollar')">
+                    <i class="hl-list-dollar"></i>
+                    <span>فاکتور ها و پیش فاکتور ها</span>
+                    <span id="hl-list-dollar">hl-list-dollar</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-list-number')">
+                    <i class="hl-list-number"></i>
+                    <span>لیست</span>
+                    <span id="hl-list-number">hl-list-number</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-logout')">
+                    <i class="hl-logout"></i>
+                    <span>خروج</span>
+                    <span id="hl-logout">hl-logout</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-logout-a')">
+                    <i class="hl-logout-a"></i>
+                    <span>خروج-a</span>
+                    <span id="hl-logout-a">hl-logout-a</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-logout-b')">
+                    <i class="hl-logout-b"></i>
+                    <span>خروج-b</span>
+                    <span id="hl-logout-b">hl-logout-b</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-message-help')">
+                    <i class="hl-message-help"></i>
+                    <span>راهنما</span>
+                    <span id="hl-message-help">hl-message-help</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-messages')">
+                    <i class="hl-messages"></i>
+                    <span>راهنمایی و پشتیبانی</span>
+                    <span id="hl-messages">hl-messages</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-microphone')">
+                    <i class="hl-microphone"></i>
+                    <span>پشتیبانی</span>
+                    <span id="hl-microphone">hl-microphone</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-microphone-help')">
+                    <i class="hl-microphone-help"></i>
+                    <span>icon</span>
+                    <span id="hl-microphone-help">hl-microphone-help</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-money')">
+                    <i class="hl-money"></i>
+                    <span>مالی</span>
+                    <span id="hl-money">hl-money</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-money-down-arrows')">
+                    <i class="hl-money-down-arrows"></i>
+                    <span>بیعانه ها</span>
+                    <span id="hl-money-down-arrows">hl-money-down-arrows</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-money-two-arrows')">
+                    <i class="hl-money-two-arrows"></i>
+                    <span>تراکنش مالی مدیریتی</span>
+                    <span id="hl-money-two-arrows">hl-money-two-arrows</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-monies')">
+                    <i class="hl-monies"></i>
+                    <span>افزایش اعتبار</span>
+                    <span id="hl-monies">hl-monies</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-native')">
+                    <i class="hl-native"></i>
+                    <span>همسان</span>
+                    <span id="hl-native">hl-native</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-n-banner')">
+                    <i class="hl-n-banner"></i>
+                    <span>کمپین های بنری</span>
+                    <span id="hl-n-banner">hl-n-banner</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-n-native')">
+                    <i class="hl-n-native"></i>
+                    <span>کمپین های همسان</span>
+                    <span id="hl-n-native">hl-n-native</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-notification')">
+                    <i class="hl-notification"></i>
+                    <span>کمپین ها</span>
+                    <span id="hl-notification">hl-notification</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-notification-solid')">
+                    <i class="hl-notification-solid"></i>
+                    <span>کمپین ها(تو پر)</span>
+                    <span id="hl-notification-solid">hl-notification-solid</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-n-push')">
+                    <i class="hl-n-push"></i>
+                    <span>کمپین های پوش</span>
+                    <span id="hl-n-push">hl-n-push</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-panel')">
+                    <i class="hl-panel"></i>
+                    <span>میز کار</span>
+                    <span id="hl-panel">hl-panel</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-panel-a')">
+                    <i class="hl-panel-a"></i>
+                    <span>میزکار-a</span>
+                    <span id="hl-panel-a">hl-panel-a</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-place')">
+                    <i class="hl-place"></i>
+                    <span>پزارش جایگاه تبلیغات</span>
+                    <span id="hl-place">hl-place</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-push')">
+                    <i class="hl-push"></i>
+                    <span>پوش</span>
+                    <span id="hl-push">hl-push</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-push-a')">
+                    <i class="hl-push-a"></i>
+                    <span>پوش-a</span>
+                    <span id="hl-push-a">hl-push-a</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-setting')">
+                    <i class="hl-setting"></i>
+                    <span>تنظیمات</span>
+                    <span id="hl-setting">hl-setting</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-setting-banner')">
+                    <i class="hl-setting-banner"></i>
+                    <span>مدیریت تبلیغات بنری</span>
+                    <span id="hl-setting-banner">hl-setting-banner</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-setting-native')">
+                    <i class="hl-setting-native"></i>
+                    <span>مدیریت تبلیغات همسان</span>
+                    <span id="hl-setting-native">hl-setting-native</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-setting-push')">
+                    <i class="hl-setting-push"></i>
+                    <span>مدیریت تبلیغات پوش</span>
+                    <span id="hl-setting-push">hl-setting-push</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-success')">
+                    <i class="hl-success"></i>
+                    <span>تایید</span>
+                    <span id="hl-success">hl-success</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-ticket')">
+                    <i class="hl-ticket"></i>
+                    <span>تیکت</span>
+                    <span id="hl-ticket">hl-ticket</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-unlock')">
+                    <i class="hl-unlock"></i>
+                    <span>نقش ها و دسترسی ها</span>
+                    <span id="hl-unlock">hl-unlock</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-user')">
+                    <i class="hl-user"></i>
+                    <span>کاربران</span>
+                    <span id="hl-user">hl-user</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-user-a')">
+                    <i class="hl-user-a"></i>
+                    <span>کاربران-a</span>
+                    <span id="hluser-a">hl-user-a</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-users')">
+                    <i class="hl-users"></i>
+                    <span>همه کاربران</span>
+                    <span id="hl-users">hl-users</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-user-solid')">
+                    <i class="hl-user-solid"></i>
+                    <span>کاربران(تو پر)</span>
+                    <span id="hl-user-solid">hl-user-solid</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-view')">
+                    <i class="hl-view"></i>
+                    <span>نمایش دهنده ها</span>
+                    <span id="hl-view">hl-view</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-view-circle')">
+                    <i class="hl-view-circle"></i>
+                    <span>نمایش دهنده ها(گرد)</span>
+                    <span id="hl-view-circle">hl-view-circle</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-view-list')">
+                    <i class="hl-view-list"></i>
+                    <span>دسته موضوعی نمایش دهنده ها</span>
+                    <span id="hl-view-list">hl-view-list</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-view-setting')">
+                    <i class="hl-view-setting"></i>
+                    <span>نمایش دهنده ها(مدیریت)</span>
+                    <span id="hl-view-setting">hl-view-setting</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-view-user')">
+                    <i class="hl-view-user"></i>
+                    <span>مدیریت گروه های نمایش دهنده کاربران</span>
+                    <span id="hl-view-user">hl-view-user</span>
+                </div>
+                <div class="icon-view"  onclick="copyToClipboard('#hl-warning')">
+                    <i class="hl-warning"></i>
+                    <span>اخطار</span>
+                    <span id="hl-warning">hl-warning</span>
                 </div>
             </div>
         </div>
     </div>
+    <div id="alertCopy"></div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
